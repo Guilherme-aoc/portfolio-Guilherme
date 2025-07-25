@@ -1,0 +1,32 @@
+.menu {
+  list-style: nome;
+  display: flex;
+  justify-content: center;
+  background-color: #cc0000; /* Vermelho forte */
+  padding: 10px 0;
+  margin-bottom: 40px;
+}
+
+.menu li {
+  margin: 0 20px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.menu a:hover {
+  color: #ff6666; /* Vermelho claro no hover */
+}
+
+/* Estilo para a seção de contato */
+.contato-info {
+  color: #90ee90; /* Verde claro */
+  font-size: 20px;
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: center;
+}

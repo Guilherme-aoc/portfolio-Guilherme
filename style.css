@@ -1,5 +1,6 @@
+/* Menu */
 .menu {
-  list-style: none;  /* corrigido aqui */
+  list-style: none;
   display: flex;
   justify-content: center;
   background-color: #cc0000; /* Vermelho forte */
@@ -22,31 +23,32 @@
   color: #ff6666; /* Vermelho claro no hover */
 }
 
-/* Estilo para a seção de contato */
-.contato-info {
-  color: #90ee90; /* Verde claro */
-  font-size: 20px;
-  max-width: 600px;
-  margin: 20px auto;
-  text-align: center;
-}
-
+/* Apresentação principal */
 .home {
+  position: relative;
+  max-width: 800px;
+  margin: 150px auto 50px auto;  /* Mais pra baixo */
+  padding: 30px 20px;
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo preto com 50% transparência */
+  color: white;
+  border-radius: 10px;
   text-align: center;
-  background: #ecf0f1;
-  padding: 50px 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.7);
+  z-index: 1;  /* Fica acima do canvas */
 }
 
+/* Estilo da foto de perfil (se usar) */
 .foto-perfil {
   width: 200px;
   height: 250px;
-  object-fit: contain;   /* A imagem vai caber toda, sem cortar */
-  border-radius: 0 !important;  /* Remove bordas arredondadas */
+  object-fit: contain;
+  border-radius: 0 !important;
   border: 4px solid #e74c3c;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   margin-bottom: 20px;
   animation: flutuar 3s ease-in-out infinite;
 }
+
 /* Animação de flutuar */
 @keyframes flutuar {
   0%, 100% {
@@ -55,50 +57,17 @@
   50% {
     transform: translateY(-10px);
   }
-  .formacao {
-  background-color: #f9f9f9;
-  padding: 40px 20px;
-  max-width: 800px;
-  margin: 0 auto 50px auto;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  color: #2c3e50;
-  text-align: left;
 }
 
-.formacao h2 {
-  text-align: center;
-  font-size: 28px;
-  color: #e74c3c;
-  margin-bottom: 20px;
-}
-
-.formacao ul {
-  list-style: none;
-  padding: 0;
-}
-
-.formacao li {
-  font-size: 18px;
-  margin-bottom: 10px;
-  padding-left: 25px;
-  position: relative;
-}
-
-.formacao li::before {
-  content: "🎓";
-  position: absolute;
-  left: 0;
-}
+/* Canvas Matrix atrás */
 #matrixCanvas {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: -1; /* Fica atrás do conteúdo */
+  z-index: -1; /* Atrás de tudo */
   width: 100%;
   height: 100%;
-  pointer-events: none; /* Não interfere no clique */
-  background: black; /* Fundo da matrix */
+  pointer-events: none;
+  background: black;
 }
 
-}

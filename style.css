@@ -55,4 +55,40 @@
   50% {
     transform: translateY(-10px);
   }
+  .formacao {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 0 auto 50px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  color: #2c3e50;
+  text-align: left;
+}
+
+.formacao h2 {
+  text-align: center;
+  font-size: 28px;
+  color: #e74c3c;
+  margin-bottom: 20px;
+}
+
+.formacao ul {
+  list-style: none;
+  padding: 0;
+}
+
+.formacao li {
+  font-size: 18px;
+  margin-bottom: 10px;
+  padding-left: 25px;
+  position: relative;
+}
+
+.formacao li::before {
+  content: "🎓";
+  position: absolute;
+  left: 0;
+}
+
 }

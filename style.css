@@ -91,6 +91,21 @@
   .menu li {
     margin: 10px 0;
   }
+  a[href*="wa.me"] {
+  display: inline-block;
+  background-color: #25D366;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: background 0.3s;
+}
+
+a[href*="wa.me"]:hover {
+  background-color: #1ebd5d;
+}
 }
 
 

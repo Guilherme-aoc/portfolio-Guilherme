@@ -9,14 +9,14 @@
 }
 
 .menu li {
-  margin: 0 20px;
+  margin: 0 25px;
 }
 
 .menu a {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .menu a:hover {
@@ -35,7 +35,7 @@
   text-align: center;
   box-shadow: 0 0 20px rgba(0,0,0,0.7);
   z-index: 1;
-  top: 50vh;
+  top: 40vh;
   transform: translateY(-50%);
 }
 

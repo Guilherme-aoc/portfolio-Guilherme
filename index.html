@@ -17,57 +17,71 @@ body {
   .centralizar{
     text-align: center;  
   }
-/* Menu container */
-.navbar-custom {
-  background: rgba(0, 0, 0, 0.7);
-  padding: 15px 30px;
-  border-radius: 15px;
-  box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
-  margin: 30px auto;
-  max-width: 900px;
+/* NAV CONTAINER */
+.navbar-personalizada {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px 0;
+  border-radius: 12px;
+  box-shadow: 0 0 15px #00ffff55;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
-/* Estilo da lista */
-.menu-modern {
+/* MENU UL */
+.menu-moderno {
+  list-style: none;
   display: flex;
   justify-content: center;
-  list-style: none;
-  padding: 0;
+  gap: 40px;
   margin: 0;
-  gap: 30px;
+  padding: 0;
 }
 
-/* Links */
-.menu-modern a {
-  position: relative;
+/* MENU LINKS */
+.menu-moderno a {
   text-decoration: none;
   font-size: 18px;
   color: #00ffff;
   padding: 10px 20px;
   border-radius: 8px;
   transition: all 0.3s ease;
+  position: relative;
   font-weight: bold;
 }
 
-/* Efeito neon ao passar o mouse */
-.menu-modern a:hover {
+/* HOVER ANIMADO */
+.menu-moderno a:hover {
   background-color: rgba(0, 255, 255, 0.1);
   box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
-  color: #ffffff;
+  color: white;
 }
 
-/* Destaque para o ativo */
-.menu-modern a.active {
+/* ITEM ATIVO */
+.menu-moderno a.active {
   background-color: #00ffff;
-  color: #000;
+  color: black;
   box-shadow: 0 0 15px #00ffff, 0 0 30px #00ffff;
 }
 
-/* Animação de brilho contínuo no ativo */
-.menu-modern a.active::after {
+/* LINHA BRILHANTE EM BAIXO (animada) */
+.menu-moderno a::after {
   content: "";
-  position:
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+  background: #00ffff;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s ease;
+  border-radius: 2px;
+}
 
+.menu-moderno a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
 
   .btn {
   padding: 12px 24px;

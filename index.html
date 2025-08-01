@@ -17,29 +17,57 @@ body {
   .centralizar{
     text-align: center;  
   }
-.menuIndex{
-  font-size: 15px;
-  color: yellow;
+/* Menu container */
+.navbar-custom {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 15px 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+  margin: 30px auto;
+  max-width: 900px;
+}
+
+/* Estilo da lista */
+.menu-modern {
+  display: flex;
+  justify-content: center;
   list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 30px;
 }
-.menuSobre{
-  font-size: 15px;
-  color: green;
-   list-style: none;
+
+/* Links */
+.menu-modern a {
+  position: relative;
+  text-decoration: none;
+  font-size: 18px;
+  color: #00ffff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-weight: bold;
 }
- .menuContato{
-  font-size: 15px;
-  color: blue;
-    list-style: none;
-} 
-h1{
-  font-size: 20px;
-  color: #fff;
-}  
-  a{
-    font-size: 20px;
-    color: green;
-  }
+
+/* Efeito neon ao passar o mouse */
+.menu-modern a:hover {
+  background-color: rgba(0, 255, 255, 0.1);
+  box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+  color: #ffffff;
+}
+
+/* Destaque para o ativo */
+.menu-modern a.active {
+  background-color: #00ffff;
+  color: #000;
+  box-shadow: 0 0 15px #00ffff, 0 0 30px #00ffff;
+}
+
+/* Animação de brilho contínuo no ativo */
+.menu-modern a.active::after {
+  content: "";
+  position:
+
 
   .btn {
   padding: 12px 24px;
@@ -99,18 +127,15 @@ h1{
 </head>
   
 <body class="container">
-  <nav class="">
-    
-  <ul class="">
-   <li ><a href="index.html" class="menuIndex">Home</a>
-  <li ><a href="sobre.html" class="menuSobre">Sobre</a></li>
-  <li ><a href="contato.html"class="menuContato">Contato</a>
-  </li>
-</ul>  
-    
-    
-    
-  </nav>
+  <nav class="navbar-custom">
+  <ul class="menu-modern">
+    <li><a class="active" href="#">Início</a></li>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="sobre.html">Sobre</a></li>
+    <li><a href="contato.html">Contato</a></li>
+  </ul>
+</nav>
+
 
   <canvas id="matrixCanvas"></canvas>
 
